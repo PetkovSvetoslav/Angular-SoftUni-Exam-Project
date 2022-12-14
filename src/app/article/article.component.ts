@@ -34,17 +34,20 @@ export class ArticleComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // Retreive the prefetched article
+    // Извлича се предварително изтеглената статия
+    
     this.route.data.subscribe(
       (data: { article: Article }) => {
         this.article = data.article;
 
-        // Load the comments on this article
+        // Зареждат се коментарите към тази статия
+        
         this.populateComments();
       }
     );
 
-    // Load the current user's data
+    // Зареждат се данните на текущия потребител
+    
     this.userService.currentUser.subscribe(
       (userData: User) => {
         this.currentUser = userData;
