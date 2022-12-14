@@ -22,9 +22,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    // preload all modules; optionally we could
-    // implement a custom preloading strategy for just some
-    // of the modules (PRs welcome 😉)
+    
+  // предварително зареждане на всички модули; по избор бихме могли...
+     // прилагане на персонализирана стратегия за предварително зареждане само за някои  модули
+    
     preloadingStrategy: PreloadAllModules,
     relativeLinkResolution: 'legacy'
 })],
