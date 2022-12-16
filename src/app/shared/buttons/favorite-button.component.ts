@@ -31,7 +31,6 @@ export class FavoriteButtonComponent {
           return of(null);
         }
 
-        // Favorite the article if it isn't favorited yet
         if (!this.article.favorited) {
           return this.articlesService.favorite(this.article.slug)
           .pipe(tap(
@@ -42,7 +41,6 @@ export class FavoriteButtonComponent {
             err => this.isSubmitting = false
           ));
 
-        // Otherwise, unfavorite the article
         } else {
           return this.articlesService.unfavorite(this.article.slug)
           .pipe(tap(
