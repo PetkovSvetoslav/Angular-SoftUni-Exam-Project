@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
       (authenticated) => {
         this.isAuthenticated = authenticated;
 
-        // set the article list accordingly
+
         if (authenticated) {
           this.setListTo('feed');
         } else {
@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
       return;
     }
 
-    // Otherwise, set the list object
+
     this.listConfig = {type: type, filters: filters};
   }
 }
