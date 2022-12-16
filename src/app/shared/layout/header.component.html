@@ -2,7 +2,6 @@
   <div class="container">
     <a class="navbar-brand" routerLink="/">MyNotes</a>
 
-    <!-- Show this for logged out users -->
     <ul *appShowAuthed="false"
       class="nav navbar-nav pull-xs-right">
 
@@ -31,7 +30,6 @@
 
     </ul>
 
-    <!-- Show this for logged in users -->
     <ul *appShowAuthed="true"
       class="nav navbar-nav pull-xs-right">
 
