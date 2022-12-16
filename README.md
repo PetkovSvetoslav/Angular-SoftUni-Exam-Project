@@ -2,7 +2,6 @@ Angular-SoftUni-Exam-Project
 
 > ### Angular codebase containing examples (CRUD, auth, advanced patterns, etc) that adheres to the Angular-SoftUni-Exam-Project spec and API.
 
-This codebase was created to demonstrate a fully fledged application built with Angular that interacts with an actual backend server including CRUD operations, authentication, routing, pagination, and more. We've gone to great lengths to adhere to the [Angular Styleguide](https://angular.io/styleguide) & best practices.
 
 
 # How it works
